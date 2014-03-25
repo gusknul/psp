@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/gustavo/Documents/workspace-sts-3.4.0.RELEASE/prestamos-mutualidades-mobile/Prestamos-mutualidades/libs/google-gson-2.2.4-release/google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/gustavo/Documents/workspace-sts-3.4.0.RELEASE/prestamos-mutualidades-mobile/Prestamos-mutualidades/libs/google-gson-2.2.4-release/google-gson-2.2.4/gson-2.2.4-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/gustavo/Documents/workspace-sts-3.4.0.RELEASE/prestamos-mutualidades-mobile/Prestamos-mutualidades/libs/google-gson-2.2.4-release/google-gson-2.2.4/gson-2.2.4-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/gustavo/Documents/workspace-sts-3.4.0.RELEASE/prestamos-mutualidades-mobile/Prestamos-mutualidades/libs/spring-android-core-1.0.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/gustavo/Documents/workspace-sts-3.4.0.RELEASE/prestamos-mutualidades-mobile/Prestamos-mutualidades/libs/spring-android-rest-template-1.0.0.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
