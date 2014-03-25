@@ -1,5 +1,6 @@
 package com.fmat.gcp.utils;
 
+
 public class SimpsonRule {
 	
 	
@@ -23,7 +24,7 @@ public class SimpsonRule {
 	
 			int i = 1;
 			while(i <= (numberOfSegments - 1)){
-				result2 = result2 + (4 * distribution.distributionT((float) (i*w)));	
+				result2 = result2 + (4 * distribution.distributionT((float) (i*w)));
 				i = i+2;
 			}
 			
@@ -32,7 +33,6 @@ public class SimpsonRule {
 				result3 = result3 + (2 * distribution.distributionT((float) (j*w)));
 				j=j+2;
 			}
-			
 		result1 = (w/3) * (distribution.distributionT(0)  + result2 + result3 + distribution.distributionT((float) x));
 		
 		return result1 ;
@@ -45,7 +45,7 @@ public class SimpsonRule {
 	public void setDOF(int dOF) {
 		DOF = dOF;
 	}
-
+	
 	public float getW() {
 		return w;
 	}

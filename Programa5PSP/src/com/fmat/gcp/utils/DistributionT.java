@@ -2,7 +2,8 @@ package com.fmat.gcp.utils;
 
 public class DistributionT {
 	
-	private int DOF;	
+	private int DOF;
+	
 	public DistributionT(int DOF){
 		this.DOF = DOF;
 	}
@@ -17,7 +18,6 @@ public class DistributionT {
 	
 	public float distributionT(double x){
 		float result = 0;
-		
 		float p = (float) gamma( (float) ((float)(DOF + 1.0) / 2.0) );
 		float q = (float) Math.pow(DOF * Math.PI, .5);
 		float e = (float) gamma((float) (DOF/2.0));
@@ -47,6 +47,7 @@ public class DistributionT {
 			
 		}
 	}
+	
 
 	
 }
