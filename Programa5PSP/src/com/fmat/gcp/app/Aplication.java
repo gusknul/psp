@@ -26,7 +26,10 @@ public class Aplication {
 		float secondResult =  (float) ruleSecond.funcionP();
 		int i = 2;
 		float compareTo = Math.abs(firstResult - secondResult);
+		
 		while(!(compareTo < E)){
+			System.out.println(firstResult);
+			System.out.println(secondResult);
 			ruleFirst = new SimpsonRule(DOF, x,NUMBER_OF_SEGMENTS * i);
 			ruleSecond = new SimpsonRule(DOF, x,(NUMBER_OF_SEGMENTS * (i + 1)));
 			firstResult = (float) ruleFirst.funcionP();
@@ -36,5 +39,5 @@ public class Aplication {
 		
 		System.out.print( MESSAGE + secondResult);
 	}
-	
+		
 }

@@ -18,7 +18,7 @@ public class DistributionT {
 	public float distributionT(double x){
 		float result = 0;
 		
-		float p = (float) gamma( (float)(DOF + 1.0) / 2.0 );
+		float p = (float) gamma( (float) ((float)(DOF + 1.0) / 2.0) );
 		float q = (float) Math.pow(DOF * Math.PI, .5);
 		float e = (float) gamma((float) (DOF/2.0));
 		float t = p/ (q * e);
@@ -27,16 +27,26 @@ public class DistributionT {
 		return result;
 	}
 	
-	public double logGamma(double x) {
-	      double tmp = (x - 0.5) * Math.log(x + 4.5) - (x + 4.5);
-	      double ser = 1.0 + 76.18009173    / (x + 0)   - 86.50532033    / (x + 1)
-	                       + 24.01409822    / (x + 2)   -  1.231739516   / (x + 3)
-	                       +  0.00120858003 / (x + 4)   -  0.00000536382 / (x + 5);
-	      return tmp + Math.log(ser * Math.sqrt(2 * Math.PI));
-	   }
-	   
-	public double gamma(double x) { 
-	   	return Math.exp(logGamma(x)); 
-	   }
+	
+	
+	public float gamma(float x){
+		
+		if(x == 1){
+			return x;
+		}
+		
+		else{
+			
+			if(x == (0.5)){
+				return (float) Math.sqrt(Math.PI);
+			}
+			
+			else{
+				return (float) ((x - 1.0 ) * gamma((float) (x-1.0)));
+			}
+			
+		}
+	}
+
 	
 }
