@@ -1,0 +1,9 @@
+----------------------------------------------------------------------------------------
+----En esta carpeta estaran todos los documentos generados en los proyectos de psp.-----
+----Colocarlos en las carpetas correspondientes.----------------------------------------
+----------------------------------------------------------------------------------------
+
+Programa 6
+>>>Documentos de diseño
+>>>Pip form
+>>>Test Case
