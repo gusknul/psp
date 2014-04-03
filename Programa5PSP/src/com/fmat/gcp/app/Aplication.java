@@ -7,7 +7,7 @@ import com.fmat.gcp.utils.SimpsonRule;
 public class Aplication {
 	
 	private static int NUMBER_OF_SEGMENTS = 10;
-	private static final double E = 0.00001;
+	private static final double E = 0.000001;
 	private static final String MESSAGE = "El valor de p es : ";
 	private static final String VALUE = "Ingrese el valor de x";
 	private static final String DOF = "Ingrese los grados de libertad";
