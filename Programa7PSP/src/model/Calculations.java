@@ -1,6 +1,6 @@
 package model;
 
-import app.Application;
+import app.Aplication;
 
 
 /**
@@ -18,10 +18,11 @@ public class Calculations {
 	private double mean[];
 	private double meanXi;
 	private double meanYi;
-	double squareR;
-	double bZero;
-	double bOne;
-	double coefficientR;public static final int NUMBER_OF_SEGMENTS = 10;
+	private double squareR;
+	private double bZero;
+	private double bOne;
+	private double coefficientR;
+	public static final int NUMBER_OF_SEGMENTS = 10;
 	private static final double E = .000001;
 	
 	public Calculations(int range , LinkedList list){
@@ -190,7 +191,7 @@ public class Calculations {
 
 				else {
 					do {
-						d = Application.getDValue(d, firstResult - p,
+						d = Aplication.getDValue(d, firstResult - p,
 								(float) (ruleFirst.funcionP() - p));
 						if ((secondResult - p) < 0) {
 							x += d;

@@ -25,7 +25,7 @@ import model.Calculations;
 import model.DistributionT;
 import model.LinkedList;
 
-public class Application {
+public class Aplication {
 	
 	public static int size;
 	public static LinkedList list;
@@ -77,8 +77,6 @@ public class Application {
 		double rangePrediction = calculations.rangePrediction(standardDeviattion, estimatedNumber);
 		double prediction = calculations.linearRegression(estimatedNumber);
 
-		
-		//esta pendiente encontrar TailArea hay que ver que valores se van a usar
 		System.out.println("\n \nEl valor de B cero es : " + bZero);
 		System.out.println("El valor de B uno es : " + bOne);
 		System.out.println("El coeficiente de correlacion r(x,y) es : " + coefficientR);
@@ -87,6 +85,8 @@ public class Application {
 		System.out.println("El valor de range es : " + rangePrediction);
 		System.out.println("El valor para UPI : " + (prediction + rangePrediction));
 		System.out.println("El valor para LPI : " + (prediction - rangePrediction));
+		System.out.println("El valor de tailArea es " + pValue);
+		
 		
 		
 		
