@@ -73,7 +73,7 @@ public class MultipleRegression {
 		
 		double[][] A = gauss.getElementsMatrix();
 		double[] b = gauss.bMatrix();
-		double[]betaValues = gauss.lsolve(A, b);
+		double[]betaValues = gauss.solveMatrix(A, b);
 		double standardDeviation = regression.standardDeviation(betaValues[0], betaValues[1], betaValues[2], betaValues[3], size);
 		double tValue = regression.getXValue();
 		double[] average = regression.average();

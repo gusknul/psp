@@ -56,7 +56,7 @@ public class Gauss {
 	}
 	
 	
-	public double[] lsolve(double[][] A, double[] b) {
+	public double[] solveMatrix(double[][] A, double[] b) {
         int N  = b.length;
 
         for (int p = 0; p < N; p++) {
